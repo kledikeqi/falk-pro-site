@@ -24,6 +24,7 @@ export const PRODUCTS = [
   { img: "/products/base-blue.jpg", k: "safety" },
   { img: "/products/kend-white.jpg", k: "sneaker" },
   { img: "/products/kend-black.jpg", k: "sneaker" },
+  { img: "/products/santha-sneaker.jpg", k: "sneaker" },
 ];
 export const PHOTOS = [
   "line-main",
