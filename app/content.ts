@@ -1,0 +1,55 @@
+// Single source of truth: edit facts and texts here.
+export const LANGS = ["it", "en", "sq", "de"] as const;
+export type Lang = (typeof LANGS)[number];
+export const CONTACT = { email: "falkpro@yahoo.com", phone: "+355 67 200 3812", wa: "355672003812",
+  web: "https://falk-pro-website.vercel.app", linkedin: "https://www.linkedin.com/company/falk-pro-sh-p-k/",
+  address: "Lagjja nr. 2, Rruga Barabit, Krujë, Albania" };
+export const FACTS = { nipt: "L74220201O", founded: "19.06.2017", admin: "Manjola Keqi", workers: "50",
+  assembly: "650", stitching: "500–700", moqAssembly: "12.000", moqStitching: "15.000" };
+export const PRODUCTS = [
+  { img: "/products/base-yellow.jpg", k: "safety" }, { img: "/products/base-blue.jpg", k: "safety" }];
+export const PHOTOS = ["line-main","line-blue","sole-press","line-orange","finished-pile","hall","exterior"];
+export const REFERENCES = [{ name: "Base Italia", since: 2017 }];
+type D = Record<string, string>;
+const it: D = { nav_about:"Chi siamo", nav_process:"Come lavoriamo", nav_products:"Prodotti", nav_capacity:"Capacità", nav_gallery:"Produzione", nav_ref:"Riferimenti", nav_contact:"Contatti",
+ h1:"Il partner produttivo per le calzature dei vostri marchi.", hsub:"Montaggio e orlatura conto terzi a Krujë, Albania. Voi portate design e materiali, noi produciamo.", cta:"Richiedi una collaborazione", cta2:"Guarda la produzione",
+ about_t:"Chi siamo", about_p:"Falk Pro sh.p.k è un’azienda calzaturiera di Krujë specializzata nella produzione conto terzi per marchi e aziende europee. Non abbiamo un marchio proprio e non vendiamo al consumatore: produciamo con precisione ciò che i nostri clienti progettano.",
+ f_found:"Fondazione", f_workers:"Addetti", f_legal:"Forma giuridica", f_status:"Stato", legal:"Società a responsabilità limitata (Sh.p.k.)", status:"Attiva",
+ proc_t:"Come lavoriamo", s1:"Il cliente fornisce", s1d:"Design, scheda tecnica, modelli e tutti i materiali.", s2:"Falk Pro produce", s2d:"Taglio, orlatura, premontaggio e montaggio secondo le specifiche.", s3:"Controllo e imballaggio", s3d:"Verifica del prodotto finito e preparazione della spedizione.", s4:"Consegna in export", s4d:"Il prodotto finito viene spedito al cliente in Europa.",
+ prod_t:"Cosa produciamo", prod_p:"Calzature antinfortunistiche, sneakers e sandali, montati su design e materiali del cliente.", safety:"Calzatura antinfortunistica", prod_note:"Montaggio eseguito da Falk Pro su design e materiali del cliente.",
+ cap_t:"Capacità produttiva", c1:"addetti esperti", c2:"paia al giorno, montaggio", c3:"paia al giorno, orlatura", moq_t:"Volumi minimi di collaborazione", moq1:"paia/mese di montaggio", moq2:"paia/mese di taglio, orlatura e premontaggio", moq_n:"Lavoriamo esclusivamente con materiali forniti dal cliente.",
+ gal_t:"La nostra produzione", gal_p:"Linee di montaggio a manovia, reparto orlatura e prodotto finito, nel nostro stabilimento su due piani.", vid_t:"Il processo in video", v1:"Processo produttivo 1", v2:"Processo produttivo 2", v3:"Processo produttivo 3", v4:"Processo produttivo 4",
+ ref_t:"Riferimenti", ref_p:"Collaborazione continuativa dal", ref_note:"Tutte le certificazioni e i test necessari sono stati completati.",
+ con_t:"Parliamo del vostro prossimo progetto", con_p:"Scriveteci: rispondiamo a ogni richiesta.", f_name:"Nome e azienda", f_mail:"Email", f_msg:"Descrivete il progetto: tipo di calzatura, volumi, tempi", send:"Invia richiesta", wa:"Scrivici su WhatsApp", addr:"Sede", prev:"Precedente", next:"Successivo", lang:"Lingua" };
+const en: D = { nav_about:"About", nav_process:"How we work", nav_products:"Products", nav_capacity:"Capacity", nav_gallery:"Production", nav_ref:"References", nav_contact:"Contact",
+ h1:"The manufacturing partner for your brand’s footwear.", hsub:"Contract assembly and stitching in Krujë, Albania. You bring the design and materials, we make the shoes.", cta:"Request a collaboration", cta2:"See the production",
+ about_t:"About us", about_p:"Falk Pro sh.p.k is a footwear manufacturer in Krujë specialised in contract production for European brands and companies. We have no brand of our own and do not sell to consumers: we make precisely what our clients design.",
+ f_found:"Founded", f_workers:"Employees", f_legal:"Legal form", f_status:"Status", legal:"Limited liability company (Sh.p.k.)", status:"Active",
+ proc_t:"How we work", s1:"The client supplies", s1d:"Design, technical sheet, patterns and all materials.", s2:"Falk Pro manufactures", s2d:"Cutting, stitching, pre-assembly and assembly to specification.", s3:"Inspection and packing", s3d:"Finished product check and shipment preparation.", s4:"Export delivery", s4d:"The finished product ships to the client in Europe.",
+ prod_t:"What we make", prod_p:"Safety footwear, sneakers and sandals, assembled on the client’s design and materials.", safety:"Safety footwear", prod_note:"Assembled by Falk Pro on the client’s design and materials.",
+ cap_t:"Production capacity", c1:"experienced employees", c2:"pairs per day, assembly", c3:"pairs per day, stitching", moq_t:"Minimum collaboration volumes", moq1:"pairs/month of assembly", moq2:"pairs/month of cutting, stitching and pre-assembly", moq_n:"We work exclusively with materials supplied by the client.",
+ gal_t:"Our production", gal_p:"Conveyor assembly lines, stitching department and finished product in our two-storey plant.", vid_t:"The process on video", v1:"Production process 1", v2:"Production process 2", v3:"Production process 3", v4:"Production process 4",
+ ref_t:"References", ref_p:"Continuous collaboration since", ref_note:"All required certifications and tests have been completed.",
+ con_t:"Let’s talk about your next project", con_p:"Write to us: we answer every enquiry.", f_name:"Name and company", f_mail:"Email", f_msg:"Describe the project: type of footwear, volumes, timing", send:"Send request", wa:"Message us on WhatsApp", addr:"Address", prev:"Previous", next:"Next", lang:"Language" };
+const sq: D = { nav_about:"Rreth nesh", nav_process:"Si punojmë", nav_products:"Produktet", nav_capacity:"Kapaciteti", nav_gallery:"Prodhimi", nav_ref:"Referencat", nav_contact:"Kontakt",
+ h1:"Partneri prodhues për këpucët e markës suaj.", hsub:"Montim dhe orlaturë fason në Krujë, Shqipëri. Ju sillni dizajnin dhe materialet, ne prodhojmë këpucët.", cta:"Kërkoni një bashkëpunim", cta2:"Shihni prodhimin",
+ about_t:"Rreth nesh", about_p:"Falk Pro sh.p.k është një ndërmarrje këpucësh në Krujë, e specializuar në prodhim fason për marka dhe kompani evropiane. Nuk kemi markë të vetën dhe nuk shesim te konsumatori: prodhojmë me përpikëri atë që projektojnë klientët tanë.",
+ f_found:"Themelimi", f_workers:"Punonjës", f_legal:"Forma ligjore", f_status:"Statusi", legal:"Shoqëri me përgjegjësi të kufizuar (Sh.p.k.)", status:"Aktive",
+ proc_t:"Si punojmë", s1:"Klienti siguron", s1d:"Dizajnin, fletën teknike, modelet dhe të gjitha materialet.", s2:"Falk Pro prodhon", s2d:"Prerje, orlaturë, premontim dhe montim sipas specifikimeve.", s3:"Kontroll dhe paketim", s3d:"Verifikimi i produktit të gatshëm dhe përgatitja e dërgesës.", s4:"Dorëzim në eksport", s4d:"Produkti i gatshëm dërgohet te klienti në Evropë.",
+ prod_t:"Çfarë prodhojmë", prod_p:"Këpucë sigurie, sneakers dhe sandale, të montuara sipas dizajnit dhe materialeve të klientit.", safety:"Këpucë sigurie", prod_note:"Montuar nga Falk Pro sipas dizajnit dhe materialeve të klientit.",
+ cap_t:"Kapaciteti i prodhimit", c1:"punonjës me përvojë", c2:"palë në ditë, montim", c3:"palë në ditë, orlaturë", moq_t:"Vëllimet minimale të bashkëpunimit", moq1:"palë/muaj montim", moq2:"palë/muaj prerje, orlaturë dhe premontim", moq_n:"Punojmë vetëm me materiale të siguruara nga klienti.",
+ gal_t:"Prodhimi ynë", gal_p:"Linja montimi me manovi, reparti i orlaturës dhe produkti i gatshëm, në fabrikën tonë dykatëshe.", vid_t:"Procesi në video", v1:"Procesi i prodhimit 1", v2:"Procesi i prodhimit 2", v3:"Procesi i prodhimit 3", v4:"Procesi i prodhimit 4",
+ ref_t:"Referencat", ref_p:"Bashkëpunim i vazhdueshëm që nga", ref_note:"Të gjitha certifikimet dhe testet e nevojshme janë kryer.",
+ con_t:"Të flasim për projektin tuaj të radhës", con_p:"Na shkruani: u përgjigjemi çdo kërkese.", f_name:"Emri dhe kompania", f_mail:"Email", f_msg:"Përshkruani projektin: lloji i këpucës, vëllimet, afatet", send:"Dërgo kërkesën", wa:"Na shkruani në WhatsApp", addr:"Adresa", prev:"Para", next:"Pas", lang:"Gjuha" };
+const de: D = { nav_about:"Über uns", nav_process:"Arbeitsweise", nav_products:"Produkte", nav_capacity:"Kapazität", nav_gallery:"Produktion", nav_ref:"Referenzen", nav_contact:"Kontakt",
+ h1:"Der Fertigungspartner für das Schuhwerk Ihrer Marke.", hsub:"Lohnfertigung von Montage und Schaftnäherei in Krujë, Albanien. Sie liefern Design und Materialien, wir fertigen die Schuhe.", cta:"Zusammenarbeit anfragen", cta2:"Produktion ansehen",
+ about_t:"Über uns", about_p:"Falk Pro sh.p.k ist ein Schuhhersteller in Krujë, spezialisiert auf Lohnfertigung für europäische Marken und Unternehmen. Wir haben keine eigene Marke und verkaufen nicht an Endkunden: Wir fertigen präzise, was unsere Kunden entwerfen.",
+ f_found:"Gegründet", f_workers:"Mitarbeiter", f_legal:"Rechtsform", f_status:"Status", legal:"Gesellschaft mit beschränkter Haftung (Sh.p.k.)", status:"Aktiv",
+ proc_t:"Arbeitsweise", s1:"Der Kunde liefert", s1d:"Design, technisches Datenblatt, Schnitte und alle Materialien.", s2:"Falk Pro fertigt", s2d:"Zuschnitt, Schaftnäherei, Vormontage und Montage nach Spezifikation.", s3:"Kontrolle und Verpackung", s3d:"Prüfung des fertigen Produkts und Versandvorbereitung.", s4:"Export-Lieferung", s4d:"Das fertige Produkt wird an den Kunden in Europa versendet.",
+ prod_t:"Was wir fertigen", prod_p:"Sicherheitsschuhe, Sneakers und Sandalen, montiert nach Design und Materialien des Kunden.", safety:"Sicherheitsschuh", prod_note:"Von Falk Pro nach Design und Materialien des Kunden montiert.",
+ cap_t:"Produktionskapazität", c1:"erfahrene Mitarbeiter", c2:"Paar pro Tag, Montage", c3:"Paar pro Tag, Schaftnäherei", moq_t:"Mindestmengen der Zusammenarbeit", moq1:"Paar/Monat Montage", moq2:"Paar/Monat Zuschnitt, Schaftnäherei und Vormontage", moq_n:"Wir arbeiten ausschließlich mit vom Kunden gelieferten Materialien.",
+ gal_t:"Unsere Produktion", gal_p:"Montagebänder, Näherei und fertiges Produkt in unserem zweigeschossigen Werk.", vid_t:"Der Prozess im Video", v1:"Produktionsprozess 1", v2:"Produktionsprozess 2", v3:"Produktionsprozess 3", v4:"Produktionsprozess 4",
+ ref_t:"Referenzen", ref_p:"Laufende Zusammenarbeit seit", ref_note:"Alle erforderlichen Zertifizierungen und Tests wurden abgeschlossen.",
+ con_t:"Sprechen wir über Ihr nächstes Projekt", con_p:"Schreiben Sie uns: Wir beantworten jede Anfrage.", f_name:"Name und Firma", f_mail:"E-Mail", f_msg:"Beschreiben Sie das Projekt: Schuhtyp, Mengen, Termine", send:"Anfrage senden", wa:"Per WhatsApp schreiben", addr:"Adresse", prev:"Zurück", next:"Weiter", lang:"Sprache" };
+export const T: Record<Lang, D> = { it, en, sq, de };
+export const LABEL: Record<Lang, string> = { it: "IT", en: "EN", sq: "SQ", de: "DE" };
