@@ -22,6 +22,8 @@ export const FACTS = {
 export const PRODUCTS = [
   { img: "/products/base-yellow.jpg", k: "safety" },
   { img: "/products/base-blue.jpg", k: "safety" },
+  { img: "/products/kend-white.jpg", k: "sneaker" },
+  { img: "/products/kend-black.jpg", k: "sneaker" },
 ];
 export const PHOTOS = [
   "line-main",
@@ -32,7 +34,7 @@ export const PHOTOS = [
   "hall",
   "exterior",
 ];
-export const REFERENCES = [{ name: "Base Italia", since: 2017 }];
+export const REFERENCES = [{ name: "Base Protection Italia", since: 2017 }];
 type D = Record<string, string>;
 const it: D = {
   nav_about: "Chi siamo",
@@ -68,6 +70,7 @@ const it: D = {
   prod_p:
     "Calzature antinfortunistiche, sneakers e sandali, montati su design e materiali del cliente.",
   safety: "Calzatura antinfortunistica",
+  sneaker: "Sneakers basse",
   prod_note:
     "Montaggio eseguito da Falk Pro su design e materiali del cliente.",
   cap_t: "Capacità produttiva",
@@ -135,6 +138,7 @@ const en: D = {
   prod_p:
     "Safety footwear, sneakers and sandals, assembled on the client’s design and materials.",
   safety: "Safety footwear",
+  sneaker: "Casual sneakers",
   prod_note: "Assembled by Falk Pro on the client’s design and materials.",
   cap_t: "Production capacity",
   c1: "experienced employees",
@@ -201,6 +205,7 @@ const sq: D = {
   prod_p:
     "Këpucë sigurie, sneakers dhe sandale, të montuara sipas dizajnit dhe materialeve të klientit.",
   safety: "Këpucë sigurie",
+  sneaker: "Atlete ditore",
   prod_note: "Montuar nga Falk Pro sipas dizajnit dhe materialeve të klientit.",
   cap_t: "Kapaciteti i prodhimit",
   c1: "punonjës me përvojë",
@@ -267,6 +272,7 @@ const de: D = {
   prod_p:
     "Sicherheitsschuhe, Sneakers und Sandalen, montiert nach Design und Materialien des Kunden.",
   safety: "Sicherheitsschuh",
+  sneaker: "Niedrige Sneaker",
   prod_note: "Von Falk Pro nach Design und Materialien des Kunden montiert.",
   cap_t: "Produktionskapazität",
   c1: "erfahrene Mitarbeiter",
