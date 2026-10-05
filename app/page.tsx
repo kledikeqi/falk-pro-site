@@ -15,6 +15,7 @@ import {
 export default function Home() {
   const [lang, setLang] = useState<Lang>("it");
   const [i, setI] = useState(0);
+  const [open, setOpen] = useState(false);
   const [form, setForm] = useState({ name: "", mail: "", msg: "" });
   const t = T[lang];
   useEffect(() => {
@@ -40,9 +41,9 @@ export default function Home() {
     <>
       <header className="top">
         <a href="#top" className="logo">
-          <b></b>FALK PRO
+          <img src="/logos/falk-pro-logo.png" alt="Falk Pro" />
         </a>
-        <nav>
+        <nav className={open ? "open" : ""}>
           {[
             ["about", "nav_about"],
             ["process", "nav_process"],
@@ -52,7 +53,7 @@ export default function Home() {
             ["ref", "nav_ref"],
             ["contact", "nav_contact"],
           ].map(([id, k]) => (
-            <a key={id} href={`#${id}`}>
+            <a key={id} href={`#${id}`} onClick={() => setOpen(false)}>
               {t[k]}
             </a>
           ))}
@@ -68,6 +69,16 @@ export default function Home() {
             </button>
           ))}
         </div>
+        <button
+          className="burger"
+          aria-label="Menu"
+          aria-expanded={open}
+          onClick={() => setOpen(!open)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </header>
       <main id="top">
         <section className="hero">
@@ -237,7 +248,14 @@ export default function Home() {
             <h2>{t.ref_t}</h2>
             {REFERENCES.map((r) => (
               <p key={r.name} className="ref">
-                <b>{r.name}</b> {t.ref_p} {r.since}
+                <img
+                  src="/logos/base-logo.png"
+                  alt={r.name}
+                  className="reflogo"
+                />
+                <span>
+                  <b>{r.name}</b> {t.ref_p} {r.since}
+                </span>
               </p>
             ))}
             <p className="note">{t.ref_note}</p>

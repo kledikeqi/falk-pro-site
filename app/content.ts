@@ -13,7 +13,7 @@ export const FACTS = {
   nipt: "L74220201O",
   founded: "19.06.2017",
   admin: "Manjola Keqi",
-  workers: "50",
+  workers: "52",
   assembly: "650",
   stitching: "500–700",
   moqAssembly: "12.000",
