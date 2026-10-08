@@ -31,7 +31,6 @@ export const PHOTOS = [
   "line-blue",
   "sole-press",
   "line-orange",
-  "finished-pile",
   "hall",
   "exterior",
 ];
